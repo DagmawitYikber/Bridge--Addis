@@ -1,4 +1,4 @@
-alert("JS is linked!");
+
 const studentForm = document.getElementById('studentForm');
 const studentDisplay = document.getElementById('studentDisplay');
 
