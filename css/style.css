@@ -1,20 +1,20 @@
-/* 1. Global Styles - Setting the stage */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} /*added this to set everything to zero so that random margins added by chrome doesn't affect my website*/
 
 body {
-    background-color: #f4f7f6; /* A soft off-white */
+    background-color: #f4f7f6;
     color: #333;
     line-height: 1.6;
 }
 
-/* 2. Header & Navigation - The "Glass" look */
+
 header {
-    background: #2c3e50; /* Deep Professional Blue */
+    background: #2c3e50; 
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -43,10 +43,10 @@ nav a {
 }
 
 nav a:hover {
-    color: #18bc9c; /* Bridge Addis Green */
+    color: #18bc9c; 
 }
 
-/* 3. Main Content Layout */
+
 main {
     max-width: 900px;
     margin: 40px auto;
@@ -62,9 +62,6 @@ section {
     transition: transform 0.3s ease;
 }
 
-section:hover {
-    transform: translateY(-5px); /* Subtle lift effect */
-}
 
 h2 {
     color: #2c3e50;
@@ -73,20 +70,8 @@ h2 {
     padding-left: 15px;
 }
 
-/* 4. Styling the Services List */
-ul {
-    list-style: none;
-}
 
-li {
-    background: #f9f9f9;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 3px solid #ddd;
-}
 
-/* Styling the CTA Section to stand out */
 .cta-section {
     background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
     color: white;
@@ -96,13 +81,13 @@ li {
 }
 
 .cta-section h2 {
-    color: #18bc9c; /* Bridge Addis Green */
-    border-left: none; /* Remove the side border for this section */
+    color: #18bc9c; 
+    border-left: none; 
     padding-left: 0;
     font-size: 2rem;
 }
 
-/* 2. Modern Button Styles */
+
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -116,7 +101,7 @@ li {
     border: 2px solid transparent;
 }
 
-/* The Primary Button (Student) */
+
 .btn {
     background-color: #18bc9c;
     color: white;
@@ -124,11 +109,11 @@ li {
 
 .btn:hover {
     background-color: #128f76;
-    transform: scale(1.05); /* Makes it slightly bigger on hover */
+    transform: scale(1.05); 
     box-shadow: 0 5px 15px rgba(24, 188, 156, 0.4);
 }
 
-/* The Secondary Button (Organization) */
+
 .btn.secondary {
     background-color: transparent;
     border: 2px solid white;
@@ -141,10 +126,49 @@ li {
     transform: scale(1.05);
 }
 
-/* 5. Footer */
+
 footer {
     text-align: center;
     padding: 40px 0;
     color: #777;
     font-size: 0.9rem;
+}/* Form Specific Styles */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#studentDisplay {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.student-card {
+    background: #fdfdfd;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    border-top: 4px solid #18bc9c;
 }
